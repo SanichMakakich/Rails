@@ -13,6 +13,7 @@ id = 0
 
 @app.route("/")
 def index():
+    '''
     message = get_flashed_messages(with_categories=True)
     with open('user.json') as file:
         data = json.loads(file.read())
@@ -22,7 +23,8 @@ def index():
         message=message,
         data=data
     )
-
+'''
+    return f"Hello world"
 
 @app.route('/users/new')
 def new_users():
